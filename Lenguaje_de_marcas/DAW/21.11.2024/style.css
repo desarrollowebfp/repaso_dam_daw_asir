@@ -1,0 +1,11 @@
+body {
+  color: blue;
+}
+
+body h2 {
+  color: red;
+}
+
+h2 {
+  color: green !important;
+}

@@ -8,6 +8,7 @@
       content="Esta es la descripción de mi pagina web"
     />
     <title>El titulo de mi aplicación web</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -21,7 +22,7 @@
             <a href="">Zapatos</a>
           </li>
           <li>
-            <a href="">Pantalones</a>
+            <a href="/ksndgasd">Pantalones</a>
           </li>
         </ul>
       </nav>
@@ -29,8 +30,10 @@
     <main>
       <section>
         <h2>Zapatos</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5VJwxh2tMw3pQ4rIlbxpSyi_5PnPYAbYTDg&s" alt="Zapatos de boda en una tienda de zapatos"/>
-        <br>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5VJwxh2tMw3pQ4rIlbxpSyi_5PnPYAbYTDg&s"
+          alt="Zapatos de boda en una tienda de zapatos"
+        />
       </section>
       <section>
         <h2>Pantalones</h2>
@@ -38,6 +41,21 @@
     </main>
     <footer>
       <p>Copyright 2024</p>
+      <form action="procesar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="email">Correo electrónico: </label>
+        <input type="text" id="email" name="email" required />
+        <label for="edad"> Edad: </label>
+        <input type="edad" id="edad" />
+        <label for="sexo"> Sexo: </label>
+        <select id="sexo" name="sexo" required>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otros">Otros</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
     </footer>
   </body>
 </html>
