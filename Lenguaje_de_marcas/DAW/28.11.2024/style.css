@@ -1,0 +1,24 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+p {
+  color: orange;
+}
+
+.parrafo {
+  color: crimson;
+}
+
+.grande {
+  font-size: 24px;
+}
+
+#historia {
+  background-color: beige;
+}
+
+#beneficios {
+  background-color: blueviolet;
+}
