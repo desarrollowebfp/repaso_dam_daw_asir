@@ -44,7 +44,7 @@ p {
 body {
   background-color: whitesmoke;
   color: black;
-  padding: 20px;
+  min-height: 100vh;
 }
 
 h1 {
@@ -93,4 +93,36 @@ footer p {
 
 #beneficios {
   background-color: cornsilk;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  height: 20px;
+}
+
+#tooltip {
+  padding: 20px;
+  cursor: pointer;
+}
+
+#tooltip > span {
+  position: absolute;
+  top: 61%;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#tooltip:hover > span {
+  opacity: 1;
+}
+
+#tooltip:hover{
+  text-decoration: underline;
 }
